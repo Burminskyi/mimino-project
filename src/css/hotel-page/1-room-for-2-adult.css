@@ -1,0 +1,11 @@
+@media screen and (min-width: 1024px) {
+  .hotel-double-room .room-switch-wrap {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hotel-double-room .room-switch-wrap {
+    visibility: visible;
+  }
+}

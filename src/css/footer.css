@@ -1,0 +1,135 @@
+.footer {
+  height: 240px;
+  padding-bottom: 41px;
+  padding-top: 40px;
+  background-color: #0e0c07;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: auto;
+  height: 100%;
+  min-width: 320px;
+  padding-left: 30px;
+  padding-right: 16px;
+}
+
+.footer-logo-icon {
+  height: 43px;
+  width: 127px;
+  fill: #f3c653;
+}
+
+.footer-menu {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+
+  margin-bottom: 33px;
+  display: flex;
+  flex-direction: column;
+  color: #f3c653;
+  gap: 16px;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link-icon {
+  fill: #f3c653;
+}
+
+.social-link-icon:hover {
+  fill: #ffffff;
+}
+
+.footer-social-name {
+  display: none;
+}
+
+@media screen and (min-width: 414px) {
+  .footer-container {
+    width: 414px;
+    padding-left: 59px;
+    padding-right: 33px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+  height: 304px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+  .footer-container {
+    width: 1024px;
+    padding-left: 154px;
+    padding-right: 122px;
+  }
+
+  .footer-logo-icon {
+    height: 69px;
+    width: 202px;
+  }
+
+  .footer-wrap {
+    display: flex;
+    gap: 137px;
+  }
+
+  .footer-socials {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+
+  .footer-social-item {
+    width: 144px;
+    height: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    border: 0.5px solid #f3c653;
+    border-radius: 2px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-social-name {
+    font-family: 'Montserrat';
+    line-height: calc(20 / 16);
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    color: #f3c653;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-container {
+    width: 1280px;
+    padding-left: 216px;
+    padding-right: 186px;
+  }
+
+  .footer-wrap {
+    gap: 199px;
+  }
+}

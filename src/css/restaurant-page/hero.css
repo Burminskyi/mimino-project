@@ -1,0 +1,76 @@
+.hotel-hero {
+  padding-top: 181px;
+  padding-bottom: 24px;
+  height: 740px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../../img/hero-img/hero-mobile-hotel.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hotel-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('../../img/hero-img/hero-mobile-hotel@2x.webp');
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .hotel-hero {
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 8.07%,
+        rgba(0, 0, 0, 0) 16.15%
+      ),
+      url('../../img/hero-img/hero-tablet-hotel.webp');
+    background-size: cover;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hotel-hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('../../img/hero-img/hero-tablet-hotel@2x.webp');
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .hotel-hero {
+      background-image: linear-gradient(
+          180deg,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 8.07%,
+          rgba(0, 0, 0, 0) 16.15%
+        ),
+        url('../../img/hero-img/hero-desctop-hotel.webp');
+      background-size: cover;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .hotel-hero {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url('../../img/hero-img/hero-desctop-hotel@2x.webp');
+      }
+    }
+  }
+}

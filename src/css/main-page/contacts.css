@@ -1,0 +1,224 @@
+  .contacts-container {
+  margin: auto;
+  height: 100%;
+  min-width: 320px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (min-width: 414px) {
+  .contacts-container {
+    width: 414px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contacts-container {
+    width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts-container {
+    width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+
+.contacts {
+  height: 599px;
+  padding-top: 36px;
+  padding-bottom: 32px;
+}
+
+.contacts-header {
+  display: none;
+}
+
+.contacts-company-name {
+  margin-bottom: 12px;
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: #494848;
+}
+
+.contacts-above-header {
+  margin-bottom: 16px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: #7a7a7a;
+}
+
+.contacts-adress {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-right: 0;
+  margin-left: auto;
+  margin-bottom: 32px;
+  padding-left: 16px;
+  width: 260px;
+  height: 76px;
+  background: #ffffff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+}
+
+.location-icon {
+  fill: #c79002;
+}
+
+.contacts-adress > .address {
+    width: fit-content;
+    height: fit-content;
+}
+
+.contacts-adress-text {
+    display: flex;
+  width: 183px;
+  height: 61px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.01em;
+  color: #494848;
+}
+
+.contacts-telephones {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.phone-icon {
+  fill: #c79002;
+}
+
+
+.contact-rest {
+  gap: 22px;
+}
+
+.contact-hotel {
+  justify-content: space-between;
+}
+
+.contacts-text {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: #c79002;
+}
+
+.contacts-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  padding-left: 14px;
+  padding-right: 8px;
+  height: 40px;
+  width: fit-content;
+  background: #ffffff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+}
+
+.contacts-tel {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: 0.02em;
+  color: #494848;
+}
+
+.contacts-map {
+  height: 220px;
+  width: 100%;
+  border: 1px solid #bababa;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 1024px) {
+  .contacts {
+    height: auto;
+    padding-top: 69px;
+    padding-bottom: 40px;
+  }
+  .contacts-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .contacts-company-name {
+    text-decoration: none;
+    margin-bottom: 8px;
+    padding-bottom: 0;
+
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
+  .contacts-above-header {
+    margin-bottom: 52px;
+    padding-bottom: 0;
+  }
+  .contacts-telephones {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .contact-hotel {
+    margin-bottom: 48px;
+  }
+
+  .contacts-adress {
+    width: 285px;
+    height: 56px;
+    margin: 0;
+  }
+
+  .contacts-adress-text {
+    width: auto;
+    height: auto;
+  }
+
+  .contacts-map {
+    height: 412px;
+    width: 535px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    padding-top: 64px;
+    padding-bottom: 73px;
+  }
+
+  .contacts-company-name {
+    margin-bottom: 16px;
+  }
+  .contacts-above-header {
+    margin-bottom: 40px;
+  }
+
+  .contacts-map {
+    width: 634px;
+  }
+}

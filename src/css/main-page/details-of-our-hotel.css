@@ -1,0 +1,260 @@
+.details-of-our-hotel {
+  position: relative;
+  height: 735px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../../img/hotel-details/mob-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.details-container {
+  overflow: hidden;
+}
+
+.details-hotel-h3 {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 92px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.douh-p {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 104px;
+  font-family: 'Montserrat';
+  letter-spacing: 0.02em;
+}
+
+.details-hotel-first-text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+
+  color: #ffffff;
+}
+
+.details-hotel-second-text {
+  margin-bottom: 48px;
+  width: 243px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+
+  color: #bababa;
+}
+
+.details-rest-gallery {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 19px;
+
+  margin-bottom: 23.59px;
+}
+
+.hotel-details-image {
+  height: 274px;
+  width: 270px;
+}
+
+.details-of-hotel-switch {
+  justify-content: flex-end;
+  margin-bottom: 39.59px;
+  margin-right: 25px;
+}
+
+.details-of-hotel-switch > .switch-btn-left {
+  margin-left: 0;
+}
+
+.details-of-hotel-switch > .switch-btn > .switch-btn-image {
+  fill: #ffffff;
+}
+
+.details-container > .hero-btn-list {
+  gap: 14px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .details-of-our-hotel {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('../../img/hotel-details/mob-background-2x.jpg');
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .details-of-our-hotel {
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 8.07%,
+        rgba(0, 0, 0, 0) 16.15%
+      ),
+      url('../../img/hotel-details/tab-background.jpg');
+    background-size: cover;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .details-of-our-hotel {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('../../img/hotel-details/tab-background-2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .details-of-our-hotel {
+    height: 620px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 8.07%,
+        rgba(0, 0, 0, 0) 16.15%
+      ),
+      url('../../img/hotel-details/desktop-background.jpg');
+    background-size: cover;
+  }
+
+  .details-hotel-h3 {
+    margin-right: 213px;
+    margin-left: auto;
+    margin-bottom: 16px;
+  }
+
+  .details-hotel-first-text {
+    margin-bottom: 8px;
+
+    font-size: 29px;
+    line-height: calc(29 / 24);
+  }
+
+  .details-hotel-second-text {
+    width: 549px;
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: calc(20 / 16);
+
+    color: #bababa;
+  }
+
+  .douh-p {
+    margin-right: 231px;
+  }
+
+  .hotel-details-image {
+    height: 270px;
+    width: 162px;
+  }
+
+  .hotel-details-first-image {
+    height: 270px;
+    width: 270px;
+    margin-left: 0;
+  }
+
+  .details-rest-gallery {
+    gap: 34px;
+    justify-content: flex-end;
+  }
+
+  .details-of-hotel-switch {
+    margin-right: 268px;
+    margin-bottom: 0;
+  }
+
+  .details-of-hotel-btn-list {
+    position: absolute;
+    top: 364px;
+    left: 741px;
+    flex-direction: column;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .details-of-our-hotel {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('../../img/hotel-details/desktop-background-2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .details-hotel-h3 {
+    margin-right: 235px;
+  }
+
+  .douh-p {
+    margin-right: 253px;
+  }
+
+  .details-hotel-second-text {
+    width: 595px;
+  }
+
+  .details-container {
+    overflow: visible;
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+
+  .details-of-our-hotel {
+    padding-top: 48px;
+    padding-bottom: 47px;
+  }
+
+  .hotel-details-third-image {
+    width: 270px;
+    z-index: 1;
+  }
+
+  .details-rest-gallery {
+    margin-right: 302px;
+    gap: 86px;
+  }
+
+  .details-of-hotel-switch {
+    margin-right: 305px;
+  }
+
+  .details-of-hotel-btn-list {
+    width: 236px;
+    left: 959px;
+  }
+
+  .details-of-hotel-btn {
+    width: 236px;
+  }
+}

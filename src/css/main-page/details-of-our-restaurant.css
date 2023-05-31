@@ -1,0 +1,236 @@
+.details-of-our-restaurant {
+  position: relative;
+  height: 735px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../../img/details-of-our-restaurant/mobile/bg-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.details-container {
+  overflow: hidden;
+}
+
+.details-h3 {
+  margin-left: 125px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.dour-p {
+  margin-left: 125px;
+  font-family: 'Montserrat';
+  letter-spacing: 0.02em;
+}
+
+.details-first-text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+
+  color: #ffffff;
+}
+
+.details-second-text {
+  margin-bottom: 48px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+
+  color: #bababa;
+}
+
+.details-gallery {
+  display: flex;
+  gap: 19px;
+
+  margin-bottom: 23.59px;
+}
+
+.restaurant-details-image {
+  height: 274px;
+  width: 270px;
+}
+
+.restaurant-details-first-image {
+  margin-left: 25px;
+}
+
+.details-of-rest-switch {
+  margin-left: 25px;
+  margin-bottom: 39.59px;
+}
+
+.details-of-rest-switch > .switch-btn-left {
+  margin-left: 0;
+}
+
+.details-of-rest-switch > .switch-btn > .switch-btn-image {
+  fill: #ffffff;
+}
+
+.details-container > .hero-btn-list {
+  gap: 14px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .details-of-our-restaurant {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('../../img/details-of-our-restaurant/mobile/bg-mobile@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .details-of-our-restaurant {
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 8.07%,
+        rgba(0, 0, 0, 0) 16.15%
+      ),
+      url('../../img/details-of-our-restaurant/tablet/bg-tablet.jpg');
+    background-size: cover;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .details-of-our-restaurant {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('../../img/details-of-our-restaurant/tablet/bg-tablet@2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .details-of-our-restaurant {
+    height: 620px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 8.07%,
+        rgba(0, 0, 0, 0) 16.15%
+      ),
+      url('../../img/details-of-our-restaurant/desktop/bg-desktop.jpg');
+    background-size: cover;
+  }
+
+  .details-h3 {
+    margin-left: 232px;
+    margin-bottom: 16px;
+  }
+
+  .details-first-text {
+    margin-bottom: 8px;
+
+    font-size: 29px;
+    line-height: calc(29 / 24);
+  }
+
+  .details-second-text {
+    width: 610px;
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: calc(20 / 16);
+
+    color: #bababa;
+  }
+
+  .dour-p {
+    margin-left: 232px;
+  }
+
+  .restaurant-details-image {
+    height: 270px;
+    width: 162px;
+  }
+
+  .restaurant-details-first-image {
+    height: 270px;
+    width: 270px;
+    margin-left: 0;
+  }
+
+  .details-gallery {
+    margin-left: 265px;
+    gap: 34px;
+  }
+
+  .details-of-rest-switch {
+    margin-left: 266px;
+    margin-bottom: 0;
+  }
+
+  .details-of-rest-btn-list {
+    position: absolute;
+    top: 364px;
+    flex-direction: column;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .details-of-our-restaurant {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('../../img/details-of-our-restaurant/desktop/bg-desktop@2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .details-container {
+    overflow: visible;
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+
+  .details-of-our-restaurant {
+    padding-top: 48px;
+    padding-bottom: 47px;
+  }
+
+  .restaurant-details-third-image {
+    width: 270px;
+  }
+
+  .details-gallery {
+    margin-left: 301px;
+    gap: 86px;
+  }
+
+  .details-of-rest-btn-list {
+    margin-left: 33px;
+    width: 236px;
+  }
+  .details-of-rest-btn {
+    width: 236px;
+  }
+}

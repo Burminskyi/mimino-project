@@ -1,0 +1,314 @@
+.numbers-hero {
+  padding-top: 484px;
+  height: 740px;
+  background-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 8.07%,
+      rgba(0, 0, 0, 0) 16.15%
+    ),
+    url('../../img/room/room.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.room-hero-btn {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.65);
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-left {
+  position: absolute;
+  top: -133px;
+  left: 15px;
+}
+
+.btn-right {
+  position: absolute;
+  top: -133px;
+  right: 15px;
+}
+
+.btn-switch-icon {
+  fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.room-hero-btn:hover > .btn-switch-icon,
+.room-hero-btn:focus > .btn-switch-icon,
+.room-hero-btn:active > .btn-switch-icon {
+  fill: #f3c653;
+}
+
+.room-hero-btn:hover,
+.room-hero-btn:focus {
+  cursor: pointer;
+}
+
+.numbers-adress {
+  position: absolute;
+  top: -419px;
+  right: 15px;
+  display: flex;
+  gap: 13px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 11px;
+  width: 210px;
+  height: 47px;
+
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+
+.location-icon-room {
+  fill: #f3c653;
+}
+
+.adress-text {
+  display: flex;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+}
+
+.numbers-h1 {
+  margin: 0;
+  font-family: 'Times New Roman';
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.numbers-hero-text {
+  max-width: 325px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.hero-wrap {
+  margin-top: 17px;
+  display: flex;
+  gap: 71px;
+  align-items: center;
+}
+
+.numbers-hero-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link-icon {
+  fill: #f3c653;
+}
+
+.social-link-icon:hover {
+  fill: #ffffff;
+}
+
+.number-price-modal-button {
+  width: 232px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.number-price-modal-button:hover,
+.number-price-modal-button:focus,
+.number-price-modal-button:active {
+  background-color: #ffffff;
+  border: 2px solid #f3c653;
+  cursor: pointer;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .numbers-hero {
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 8.07%,
+        rgba(0, 0, 0, 0) 16.15%
+      ),
+      url('../../img/room/room-2x.jpg');
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .numbers-hero {
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 8.07%,
+        rgba(0, 0, 0, 0) 16.15%
+      ),
+      url('../../img/room/room-tablet.jpg');
+    background-size: cover;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .numbers-hero {
+      background-image: linear-gradient(
+          180deg,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 8.07%,
+          rgba(0, 0, 0, 0) 16.15%
+        ),
+        url('../../img/room/room-tablet-2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .numbers-hero {
+    padding-top: 468px;
+    height: 718px;
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 8.07%,
+        rgba(0, 0, 0, 0) 16.15%
+      ),
+      url('../../img/room/room-desktop.jpg');
+  }
+
+  .btn-left {
+    top: -128px;
+    left: 47px;
+  }
+
+  .btn-right {
+    top: -128px;
+    right: 47px;
+  }
+
+  .numbers-h1 {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: calc(41 / 36);
+    letter-spacing: 0.05em;
+  }
+
+  .numbers-hero-text {
+    max-width: 400px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+
+  .numbers-adress {
+    position: static;
+    width: 285px;
+    height: 56px;
+    gap: 16px;
+    padding-left: 16px;
+  }
+
+  .adress-text {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+
+  .numbers-hero-socials {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+  }
+
+  .numbers-social-item {
+    margin-top: 0;
+  }
+
+  .number-price-modal-button {
+    position: absolute;
+    bottom: 62px;
+    right: 47px;
+  }
+
+  .hero-wrap {
+    margin-top: 24px;
+    gap: 41px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .numbers-hero {
+      background-image: linear-gradient(
+          180deg,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 8.07%,
+          rgba(0, 0, 0, 0) 16.15%
+        ),
+        url('../../img/room/room-desktop-2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .numbers-hero {
+    padding-top: 524px;
+    height: 720px;
+  }
+
+  .btn-left {
+    top: -112px;
+    left: 85px;
+  }
+
+  .btn-right {
+    top: -112px;
+    right: 85px;
+  }
+
+  .numbers-adress {
+    display: none;
+  }
+
+  .numbers-hero-socials {
+    display: none;
+    position: absolute;
+    top: 41px;
+    right: 88px;
+  }
+
+  .number-price-modal-button {
+    bottom: 66px;
+    right: 85px;
+  }
+}

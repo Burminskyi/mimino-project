@@ -1,0 +1,278 @@
+.about-container {
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.about-our-rest {
+  height: 1191px;
+  padding-top: 16px;
+  padding-bottom: 27.5px;
+}
+
+.about-section-top {
+  margin-bottom: 12px;
+
+  font-family: 'Times New Roman';
+  font-size: 20px;
+  line-height: calc(23 / 20);
+
+  color: #b4b4b4;
+}
+
+.logo-h3 {
+  margin-bottom: 12px;
+
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+
+  color: #494848;
+}
+
+.about-section-first-p {
+  width: 258px;
+  margin-bottom: 28px;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+
+  color: #7a7a7a;
+}
+
+.about-rest-first-img {
+  width: 244px;
+  height: 322px;
+
+  margin-left: auto;
+  margin-bottom: 32px;
+
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.about-rest-second-item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.about-section-second-p {
+  width: 163px;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+
+  color: #c79002;
+}
+
+.about-rest-second-img {
+  width: 200px;
+  height: 278px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.about-rest-gallery-wrap {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 27.6px;
+}
+
+.about-rest-gallery-wrap > img {
+  width: 245px;
+  height: 245px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.about-rest-gallery-first-img {
+  margin-left: 49px;
+}
+
+.switch-btn-wrap {
+  display: flex;
+  gap: 34px;
+}
+
+.switch-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.switch-btn-left {
+  margin-left: auto;
+}
+
+.switch-btn-left.svg {
+  fill: #000000;
+}
+
+.switch-btn-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-modal-btn {
+  display: none;
+}
+
+/* @media screen and (min-width: 1024px) {
+  .about-rest-gallery-first-img {
+    margin-left: 69px;
+  }
+} */
+
+@media screen and (min-width: 1024px) {
+  .about-rest-gallery-first-img {
+    margin-left: 69px;
+  }
+
+  .about-container {
+    overflow: visible;
+  }
+
+  .about-our-rest {
+    height: 1238px;
+    padding-top: 120px;
+    padding-bottom: 39.6px;
+  }
+  .about-section-top {
+    margin-bottom: 4px;
+
+    font-family: 'Times New Roman';
+    font-size: 32px;
+    line-height: calc(37 / 32);
+  }
+
+  .logo-h3 {
+    margin-bottom: 24px;
+
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
+
+  .about-rest-first-item {
+    margin-bottom: 336px;
+  }
+
+  .about-section-first-p {
+    margin-bottom: 0;
+    width: 439px;
+
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+
+  .about-rest-first-img {
+    width: 400px;
+    height: 524px;
+    position: absolute;
+    margin-bottom: 0;
+    right: 112px;
+    top: -152px;
+  }
+
+  .about-rest-second-item {
+    margin-bottom: 154px;
+    justify-content: start;
+    gap: 48px;
+  }
+
+  .about-section-second-p {
+    margin-left: 398px;
+    width: 312px;
+
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+
+  .about-rest-second-img {
+    position: absolute;
+    width: 350px;
+    height: 500px;
+  }
+
+  .about-rest-gallery-wrap {
+    gap: 40px;
+    margin-bottom: 39.6px;
+  }
+
+  .about-rest-gallery-wrap > img {
+    width: 194px;
+    height: 194px;
+  }
+
+  .about-rest-gallery-first-img {
+    margin-left: 489px;
+  }
+
+  .switch-btn-wrap {
+    margin-right: 13px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-our-rest {
+    height: 1275px;
+    padding-bottom: 57.6px;
+  }
+
+  .about-rest-first-item {
+    margin-bottom: 348px;
+  }
+
+  .about-section-first-p {
+    width: 518px;
+  }
+
+  .about-rest-first-img {
+    width: 460px;
+    height: 574px;
+    right: 180px;
+    top: -153px;
+  }
+
+  .about-rest-second-item {
+    margin-bottom: 119px;
+  }
+
+  .about-section-second-p {
+    margin-left: 492px;
+  }
+
+  .about-rest-second-img {
+    width: 460px;
+    height: 574px;
+  }
+
+  .about-rest-gallery-wrap {
+    margin-bottom: 43.6px;
+  }
+
+  .about-rest-gallery-wrap > img {
+    width: 254px;
+    height: 254px;
+  }
+
+  .about-rest-gallery-first-img {
+    margin-left: auto;
+  }
+
+  .switch-btn-wrap {
+    margin-right: 9px;
+  }
+}
