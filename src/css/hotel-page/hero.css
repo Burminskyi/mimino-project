@@ -11,6 +11,10 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.hotel-text {
+  margin-top: 32px;
+  margin-bottom: 182px;
+}
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
@@ -62,6 +66,11 @@
         url('../../img/hero-img/hero-desctop-restourant.webp');
       background-size: cover;
     }
+    .hotel-text {
+      margin-top: 24px;
+      margin-bottom: 226px;
+    }
+
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -81,5 +90,8 @@
   .rest-hero {
     padding-top: 164px;
     padding-bottom: 65px;
+  }
+  .hotel-text {
+    margin-bottom: 242px;
   }
 }
