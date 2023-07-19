@@ -13,8 +13,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/mimino-project/assets/main-642bf1e7.js"></script>
-    <link rel="stylesheet" href="/mimino-project/assets/main-92832935.css">
+    <script type="module" crossorigin src="/mimino-project/assets/main-6551eea9.js"></script>
+    <link rel="stylesheet" href="/mimino-project/assets/main-7adeb17c.css">
   </head>
   <body>
     <header>
@@ -120,8 +120,7 @@
       <li class="hero-btn-item">
         <button
           type="button"
-          class="hero-btn"
-          data-modal-open-room-price-modal-window
+          class="hero-btn open-book-table-btn"
         >
           Забронювати столик
         </button>
@@ -210,7 +209,7 @@
       <li class="hero-btn-item">
         <button
           type="button"
-          class="hero-btn room-btn"
+          class="hero-btn room-btn open-room-price-btn"
           data-modal-open-room-price-modal-window
         >
           Переглянути ціни
@@ -271,7 +270,7 @@
       <li class="hero-btn-item">
         <button
           type="button"
-          class="hero-btn room-btn"
+          class="hero-btn room-btn open-room-price-btn"
           data-modal-open-room-price-modal-window
         >
           Переглянути ціни
@@ -329,8 +328,7 @@
       <li class="hero-btn-item">
         <button
           type="button"
-          class="hero-btn room-btn"
-          data-modal-open-room-price-modal-window
+          class="hero-btn room-btn open-room-price-btn"
         >
           Переглянути ціни
         </button>
@@ -392,7 +390,7 @@
 >
   <div class="modal">
     <form class="room-booking-form">
-      <button class="modal-close-button" data-modal-close>
+      <button class="modal-close-button">
         <svg width="24" height="24">
           <use href="/mimino-project/assets/sprite-c44aa0d9.svg#icon-close"></use>
         </svg>
@@ -459,7 +457,7 @@
           </span>
         </div>
         <div class="form-field last-form-field">
-          <label class="label" for="leaving-date">Дата заїзду</label>
+          <label class="label" for="leaving-date">Дата виїзду</label>
           <input
             class="svg-input"
             type="text"
@@ -494,19 +492,19 @@
     <div
   class="room-booking-modal backdrop is-hidden"
   data-modal
-  id="bookRoomModal"
+  id="bookTableModal"
 >
   <div class="modal">
-    <form class="room-booking-form">
-      <button class="modal-close-button" data-modal-close>
+    <form class="table-booking-form">
+      <button class="modal-close-button">
         <svg width="24" height="24">
           <use href="/mimino-project/assets/sprite-c44aa0d9.svg#icon-close"></use>
         </svg>
       </button>
-      <b class="form-head">ЗАБРОНЮВАТИ НОМЕР</b>
+      <b class="form-head">ЗАБРОНЮВАТИ СТОЛИК</b>
       <div class="form-fields-wrap first-field-wrap">
         <div class="form-field">
-          <label class="label" for="name">На кого забронювати номер?</label>
+          <label class="label" for="name">На кого забронювати столик?</label>
           <input type="text" name="name" id="name" placeholder="Ваше ім’я" />
         </div>
         <div class="form-field">
@@ -519,38 +517,27 @@
           />
         </div>
       </div>
-      <div class="form-field select-field">
-        <label class="label" for="room-type">Категорія номеру</label>
-        <select class="select-input" id="room-type" name="room-type">
-          <option value="lux-for-two" selected>Двомісний люкс</option>
-          <option value="number-for-two">Двомісний номер</option>
-          <option value="number-for-three">Трьохмісний номер</option>
-        </select>
-        <span class="room-type-icon modal-icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-          >
-            <path
-              fill="#C79002"
-              d="M2.454 7.94a1.5 1.5 0 0 1 2.121 0L12 15.363l7.425-7.425a1.5 1.5 0 0 1 2.121 2.121l-8.485 8.486a1.5 1.5 0 0 1-2.121 0L2.454 10.06a1.5 1.5 0 0 1 0-2.12Z"
-            />
-          </svg>
-        </span>
-      </div>
+
       <div class="form-fields-wrap second-field-wrap">
-        <div class="form-field">
-          <label class="label" for="arriving-date">Дата заїзду</label>
-          <input
-            class="date svg-input"
-            type="text"
-            name="arriving-date"
-            id="arriving-date"
-            placeholder="Сьогодні"
-          />
-          <span class="arriving-date-icon modal-icon">
+        <div class="form-field select-field">
+          <label class="label" for="room-type"
+            >Столик на яку кількість осіб?</label
+          >
+          <select class="select-input table-select" id="room-type" name="room-type">
+            <option value="one-person">1</option>
+            <option value="two-persons" selected>2</option>
+            <option value="three-persons">3</option>
+            <option value="four-persons">4</option>
+            <option value="five-persons">5</option>
+            <option value="six-persons">6</option>
+            <option value="seven-persons">7</option>
+            <option value="eight-persons">8</option>
+            <option value="nine-persons">9</option>
+            <option value="ten-persons">10</option>
+            <option value="eleven-persons">11</option>
+            <option value="twelwe-persons">12</option>
+          </select>
+          <span class="person-amount-icon modal-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -564,16 +551,18 @@
             </svg>
           </span>
         </div>
-        <div class="form-field last-form-field">
-          <label class="label" for="leaving-date">Дата заїзду</label>
+        <div class="form-field">
+          <label class="label" for="arriving-date"
+            >На яку дату бронювати?</label
+          >
           <input
-            class="svg-input"
+            class="date svg-input"
             type="text"
-            name="leaving-date"
-            id="leaving-date"
+            name="arriving-date"
+            id="arriving-date"
             placeholder="Сьогодні"
           />
-          <span class="leaving-date-icon modal-icon">
+          <span class="booking-date-icon modal-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -589,7 +578,7 @@
         </div>
       </div>
       <div class="modal-btn">
-        <button class="modal-submit-btn book-room-submit-btn" type="submit">
+        <button class="modal-submit-btn book-table-submit-btn" type="submit">
           ОФОРМИТИ БРОНЮВАННЯ
         </button>
       </div>
@@ -597,7 +586,78 @@
   </div>
 </div>
 
-    
+    <div
+  class="room-booking-modal backdrop is-hidden"
+  data-modal
+  id="roomPriceModal"
+>
+  <div class="modal">
+    <form class="price-form">
+      <button class="modal-close-button">
+        <svg width="24" height="24">
+          <use href="/mimino-project/assets/sprite-c44aa0d9.svg#icon-close"></use>
+        </svg>
+      </button>
+      <b class="form-head">ЦІНИ НА НОМЕР</b>
+      <p class="number-type">Двомісний люкс</p>
+      <p class="number-type-selection">Категорія номеру</p>
+
+      <div class="form-fields-wrap second-field-wrap">
+        <div class="form-field select-field">
+          <label class="label" for="room-type">Кількість ночей</label>
+          <select
+            class="select-input table-select"
+            id="room-type"
+            name="room-type"
+          >
+            <option value="one-person">1</option>
+            <option value="two-persons" selected>2</option>
+            <option value="three-persons">3</option>
+            <option value="four-persons">4</option>
+            <option value="five-persons">5</option>
+            <option value="six-persons">6</option>
+            <option value="seven-persons">7</option>
+            <option value="eight-persons">8</option>
+            <option value="nine-persons">9</option>
+            <option value="ten-persons">10</option>
+            <option value="eleven-persons">11</option>
+            <option value="twelwe-persons">12</option>
+          </select>
+          <span class="days-quantity-icon modal-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+            >
+              <path
+                fill="#C79002"
+                d="M2.454 7.94a1.5 1.5 0 0 1 2.121 0L12 15.363l7.425-7.425a1.5 1.5 0 0 1 2.121 2.121l-8.485 8.486a1.5 1.5 0 0 1-2.121 0L2.454 10.06a1.5 1.5 0 0 1 0-2.12Z"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="form-field bottom-form-field">
+          <label class="label" for="arriving-date">грн</label>
+          <input
+            disabled
+            class="date svg-input"
+            type="text"
+            name="arriving-date"
+            id="arriving-date"
+            placeholder="1000"
+          />
+        </div>
+      </div>
+      <div class="modal-btn">
+        <button class="modal-submit-btn room-price-submit-btn" type="submit">
+          ЗАБРОНЮВАТИ НОМЕР
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
     
   </body>
 </html>
