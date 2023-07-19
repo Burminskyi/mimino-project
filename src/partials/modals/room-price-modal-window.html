@@ -1,0 +1,71 @@
+<div
+  class="room-booking-modal backdrop is-hidden"
+  data-modal
+  id="roomPriceModal"
+>
+  <div class="modal">
+    <form class="price-form">
+      <button class="modal-close-button">
+        <svg width="24" height="24">
+          <use href="./img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <b class="form-head">ЦІНИ НА НОМЕР</b>
+      <p class="number-type">Двомісний люкс</p>
+      <p class="number-type-selection">Категорія номеру</p>
+
+      <div class="form-fields-wrap second-field-wrap">
+        <div class="form-field select-field">
+          <label class="label" for="room-type">Кількість ночей</label>
+          <select
+            class="select-input table-select"
+            id="room-type"
+            name="room-type"
+          >
+            <option value="one-person">1</option>
+            <option value="two-persons" selected>2</option>
+            <option value="three-persons">3</option>
+            <option value="four-persons">4</option>
+            <option value="five-persons">5</option>
+            <option value="six-persons">6</option>
+            <option value="seven-persons">7</option>
+            <option value="eight-persons">8</option>
+            <option value="nine-persons">9</option>
+            <option value="ten-persons">10</option>
+            <option value="eleven-persons">11</option>
+            <option value="twelwe-persons">12</option>
+          </select>
+          <span class="days-quantity-icon modal-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+            >
+              <path
+                fill="#C79002"
+                d="M2.454 7.94a1.5 1.5 0 0 1 2.121 0L12 15.363l7.425-7.425a1.5 1.5 0 0 1 2.121 2.121l-8.485 8.486a1.5 1.5 0 0 1-2.121 0L2.454 10.06a1.5 1.5 0 0 1 0-2.12Z"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="form-field bottom-form-field">
+          <label class="label" for="arriving-date">грн</label>
+          <input
+            disabled
+            class="date svg-input"
+            type="text"
+            name="arriving-date"
+            id="arriving-date"
+            placeholder="1000"
+          />
+        </div>
+      </div>
+      <div class="modal-btn">
+        <button class="modal-submit-btn room-price-submit-btn" type="submit">
+          ЗАБРОНЮВАТИ НОМЕР
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

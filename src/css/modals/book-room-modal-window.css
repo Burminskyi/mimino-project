@@ -13,7 +13,7 @@
 }
 
 .is-hidden {
-    display: none;
+  display: none;
 }
 
 .room-booking-form {
@@ -99,7 +99,7 @@
   color: #808080;
 }
 
-.form-field select {
+.select-input {
   margin: 0;
   padding-left: 12px;
   padding-right: 12px;
@@ -118,6 +118,10 @@
 
   color: #808080;
   z-index: 3;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .modal-close-button {
@@ -129,12 +133,6 @@
   height: 24px;
   border: none;
   background-color: transparent;
-}
-
-.select-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .modal-icon {

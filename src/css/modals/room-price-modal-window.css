@@ -1,0 +1,75 @@
+.price-form {
+  position: relative;
+  width: 414px;
+  height: 555px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 15px;
+  background: #fffdee;
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.days-quantity-icon {
+  top: 227.5px;
+}
+
+.modal-submit-btn {
+  width: 384px;
+  height: 64px;
+
+  background: #000000;
+
+  border: 1px solid #f3c653;
+  border-radius: 2px;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+
+  color: #ffffff;
+}
+
+.number-type {
+  margin-bottom: 20px;
+  font-family: Times New Roman;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #808080;
+}
+
+.number-type-selection {
+  margin-bottom: 16px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #c79002;
+}
+
+.bottom-form-field {
+  margin-bottom: 40px !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .price-form {
+    width: 712px;
+    height: 483px;
+    padding: 60px;
+  }
+
+  .days-quantity-icon {
+    top: 247.5px;
+    right: 385.03px;
+  }
+
+  .bottom-form-field {
+    margin-bottom: 0 !important;
+  }
+}
