@@ -7,21 +7,91 @@
       Velit officia consequat duis enim velit mollit.
     </p>
     <div class="details-gallery">
-      <img
-        class="restaurant-details-image restaurant-details-first-image"
-        src="./img/details-of-our-restaurant/steak.jpg"
-        alt=""
-      />
-      <img
-        class="restaurant-details-image restaurant-details-second-image"
-        src="./img/details-of-our-restaurant/pizza.jpg"
-        alt=""
-      />
-      <img
-        class="restaurant-details-image restaurant-details-third-image"
-        src="./img/details-of-our-restaurant/pizza.jpg"
-        alt=""
-      />
+      <picture class="restaurant-details-first-image">
+        <source
+          srcset="
+            ./img/details-of-our-restaurant/desktop/desk-steak.jpg    1x,
+            ./img/details-of-our-restaurant/desktop/desk-steak@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/details-of-our-restaurant/tablet/tab-steak.jpg    1x,
+            ./img/details-of-our-restaurant/tablet/tab-steak@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ./img/details-of-our-restaurant/mobile/mob-steak.jpg    1x,
+            ./img/details-of-our-restaurant/mobile/mob-steak@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(max-width: 1023px)"
+        />
+        <img
+          class="restaurant-details-image"
+          src="./img/details-of-our-restaurant/mobile/mob-steak.jpg"
+          alt="steak"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="
+            ./img/details-of-our-restaurant/desktop/desk-bbq.jpg    1x,
+            ./img/details-of-our-restaurant/desktop/desk-bbq@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/details-of-our-restaurant/tablet/tab-bbq.jpg    1x,
+            ./img/details-of-our-restaurant/tablet/tab-bbq@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ./img/details-of-our-restaurant/tablet/tab-bbq.jpg    1x,
+            ./img/details-of-our-restaurant/tablet/tab-bbq@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(max-width: 1023px)"
+        />
+        <img
+          class="restaurant-details-image restaurant-details-second-image"
+          src="./img/details-of-our-restaurant/tablet/tab-bbq.jpg"
+          alt="bbq"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="
+            ./img/details-of-our-restaurant/desktop/desk-shawarma.jpg    1x,
+            ./img/details-of-our-restaurant/desktop/desk-shawarma@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/details-of-our-restaurant/tablet/tab-shawarma.jpg    1x,
+            ./img/details-of-our-restaurant/tablet/tab-shawarma@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(max-width: 1279px)"
+        />
+        <img
+          class="restaurant-details-image restaurant-details-third-image"
+          src="./img/details-of-our-restaurant/tablet/tab-shawarma.jpg"
+          alt="bbq"
+        />
+      </picture>
     </div>
     <div class="switch-btn-wrap details-of-rest-switch">
       <button type="button" class="switch-btn switch-btn-left">

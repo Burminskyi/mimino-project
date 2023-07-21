@@ -9,11 +9,37 @@
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <img
-          class="about-rest-first-img"
-          src="./img/about-our-restaurant/mobile/restaurant-interior-mobile.webp"
-          alt=""
-        />
+        <picture>
+          <source
+            srcset="
+              ./img/about-our-restaurant/desktop/restaurant-interior-desktop.webp    1x,
+              ./img/about-our-restaurant/desktop/restaurant-interior-desktop@2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./img/about-our-restaurant/tablet/restaurant-interior-tablet.webp    1x,
+              ./img/about-our-restaurant/tablet/restaurant-interior-tablet@2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              ./img/about-our-restaurant/mobile/restaurant-interior-mobile.webp    1x,
+              ./img/about-our-restaurant/mobile/restaurant-interior-mobile@2x.webp 2x
+            "
+            type="image/webp"
+            media="(max-width: 1023px)"
+          />
+          <img
+            class="about-rest-first-img"
+            src="./img/about-our-restaurant/restaurant-interior-desktop.jpg"
+            alt="restourant interior"
+          />
+        </picture>
       </li>
       <li class="about-rest-second-item">
         <p class="about-section-second-p">
@@ -21,20 +47,106 @@
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <img
-          class="about-rest-second-img"
-          src="./img/about-our-restaurant/mobile/interior-chairs-mobile.webp"
-          alt=""
-        />
+        <picture class="about-rest-second-img">
+          <source
+            srcset="
+              ./img/about-our-restaurant/desktop/interior-chairs-desktop.webp    1x,
+              ./img/about-our-restaurant/desktop/interior-chairs-desktop@2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./img/about-our-restaurant/tablet/interior-chairs-tablet.webp    1x,
+              ./img/about-our-restaurant/tablet/interior-chairs-tablet@2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              ./img/about-our-restaurant/mobile/interior-chairs-mobile.webp    1x,
+              ./img/about-our-restaurant/mobile/interior-chairs-mobile@2x.webp 2x
+            "
+            type="image/webp"
+            media="(max-width: 1023px)"
+          />
+          <img
+            src="./img/about-our-restaurant/interior-chairs-desktop.jpg"
+            alt="restoraunt chairs"
+          />
+        </picture>
       </li>
     </ul>
     <div class="about-rest-gallery-wrap">
-      <img
+      <picture class="about-rest-gallery-first-img">
+        <source
+          srcset="
+            ./img/about-our-restaurant/desktop/tea-desktop.webp    1x,
+            ./img/about-our-restaurant/desktop/tea-desktop@2x.webp 2x
+          "
+          type="image/webp"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/about-our-restaurant/tablet/tea-tablet.webp    1x,
+            ./img/about-our-restaurant/tablet/tea-tablet@2x.webp 2x
+          "
+          type="image/webp"
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ./img/about-our-restaurant/mobile/tea-mobile.webp    1x,
+            ./img/about-our-restaurant/mobile/tea-mobile@2x.webp 2x
+          "
+          type="image/webp"
+          media="(max-width: 1023px)"
+        />
+        <img
+          src="./img/about-our-restaurant/tea-desktop.jpg"
+          alt="tea on table"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="
+            ./img/about-our-restaurant/desktop/breakfast-desktop.webp    1x,
+            ./img/about-our-restaurant/desktop/breakfast-desktop@2x.webp 2x
+          "
+          type="image/webp"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/about-our-restaurant/tablet/breakfast-tablet.webp    1x,
+            ./img/about-our-restaurant/tablet/breakfast-tablet@2x.webp 2x
+          "
+          type="image/webp"
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ./img/about-our-restaurant/mobile/breakfast-mobile.webp    1x,
+            ./img/about-our-restaurant/mobile/breakfast-mobile@2x.webp 2x
+          "
+          type="image/webp"
+          media="(max-width: 1023px)"
+        />
+        <img
+          src="./img/about-our-restaurant/breakfast-desktop.jpg"
+          alt="breakfast on table"
+        />
+      </picture>
+
+      <!-- <img
         class="about-rest-gallery-first-img"
         src="./img/about-our-restaurant/mobile/breakfast-mobile.webp"
         alt=""
       />
-      <img src="./img/about-our-restaurant/mobile/tea-mobile.webp" alt="" />
+      <img src="./img/about-our-restaurant/mobile/tea-mobile.webp" alt="" /> -->
     </div>
     <div class="switch-btn-wrap">
       <button type="button" class="switch-btn switch-btn-left">

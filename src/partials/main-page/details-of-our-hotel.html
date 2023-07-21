@@ -7,21 +7,91 @@
       Velit officia consequat duis enim velit mollit.
     </p>
     <div class="details-rest-gallery">
-      <img
-        class="hotel-details-image hotel-details-first-image"
-        src="./img/hotel-details/desktop-room.jpg"
-        alt=""
-      />
-      <img
-        class="hotel-details-image hotel-details-second-image"
-        src="./img/hotel-details/desktop-plate.jpg"
-        alt=""
-      />
-      <img
-        class="hotel-details-image hotel-details-third-image"
-        src="./img/hotel-details/desktop-registration.jpg"
-        alt=""
-      />
+      <picture>
+        <source
+          srcset="
+            ./img/hotel-details/desktop-room.jpg    1x,
+            ./img/hotel-details/desktop-room-2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/hotel-details/tab-room.jpg    1x,
+            ./img/hotel-details/tab-room-2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ./img/hotel-details/mob-room.jpg    1x,
+            ./img/hotel-details/mob-room-2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(max-width: 1023px)"
+        />
+        <img
+          class="hotel-details-image hotel-details-first-image"
+          src="./img/hotel-details/mob-room.jpg"
+          alt="apartments"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="
+            ./img/hotel-details/desktop-plate.jpg    1x,
+            ./img/hotel-details/desktop-plate-2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/hotel-details/tab-plate.jpg    1x,
+            ./img/hotel-details/tab-plate-2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ./img/hotel-details/tab-plate.jpg    1x,
+            ./img/hotel-details/tab-plate-2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(max-width: 1023px)"
+        />
+        <img
+          class="hotel-details-image hotel-details-second-image"
+          src="./img/hotel-details/tab-plate.jpg"
+          alt="dishes"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="
+            ./img/hotel-details/desktop-registration.jpg    1x,
+            ./img/hotel-details/desktop-registration-2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/hotel-details/tab-registration.jpg    1x,
+            ./img/hotel-details/tab-registration-2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(max-width: 1279px)"
+        />
+        <img
+          class="hotel-details-image hotel-details-third-image"
+          src="./img/hotel-details/tab-registration.jpg"
+          alt="dishes"
+        />
+      </picture>
     </div>
     <div class="switch-btn-wrap details-of-hotel-switch">
       <button type="button" class="switch-btn switch-btn-left">
@@ -45,10 +115,7 @@
         </button>
       </li>
       <li class="hero-btn-item">
-        <button
-          type="button"
-          class="hero-btn open-room-price-btn"
-        >
+        <button type="button" class="hero-btn open-room-price-btn">
           Переглянути ціни
         </button>
       </li>

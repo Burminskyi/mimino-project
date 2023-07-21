@@ -14,10 +14,6 @@
   background-position: center;
 }
 
-.details-container {
-  overflow: hidden;
-}
-
 .details-h3 {
   margin-left: 125px;
   margin-bottom: 12px;
@@ -59,7 +55,7 @@
 
 .restaurant-details-image {
   height: 274px;
-  width: 270px;
+  min-width: 270px;
 }
 
 .restaurant-details-first-image {
@@ -166,7 +162,7 @@
 
   .restaurant-details-image {
     height: 270px;
-    width: 162px;
+    min-width: 162px;
   }
 
   .restaurant-details-first-image {
@@ -230,7 +226,12 @@
     margin-left: 33px;
     width: 236px;
   }
+
   .details-of-rest-btn {
     width: 236px;
+  }
+
+  .details-of-rest-switch {
+    margin-left: 300px;
   }
 }

@@ -60,13 +60,14 @@
   display: flex;
   flex-direction: row-reverse;
   gap: 19px;
+  margin-right: 25px;
 
   margin-bottom: 23.59px;
 }
 
 .hotel-details-image {
   height: 274px;
-  width: 270px;
+  min-width: 270px;
 }
 
 .details-of-hotel-switch {
@@ -170,8 +171,9 @@
   }
 
   .hotel-details-image {
+    margin-right: 0;
     height: 270px;
-    width: 162px;
+    min-width: 162px;
   }
 
   .hotel-details-first-image {

@@ -9,11 +9,37 @@
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <img
-          class="about-hotel-first-img"
-          src="./img/about-our-hotel/desktop-modern-studio-apartment.jpg"
-          alt=""
-        />
+        <picture>
+          <source
+            media="(max-width: 1023px)"
+            srcset="
+              ./img/about-our-hotel/mobile-modern-studio-apartment.jpg    1x,
+              ./img/about-our-hotel/mobile-modern-studio-apartment-2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <source
+            media="(min-width: 1024px) and (max-width: 1279px)"
+            srcset="
+              ./img/about-our-hotel/tablet-modern-studio-apartment.jpg    1x,
+              ./img/about-our-hotel/tablet-modern-studio-apartment-2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/about-our-hotel/desktop-modern-studio-apartment.jpg    1x,
+              ./img/about-our-hotel/desktop-modern-studio-apartment-2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <img
+            class="about-hotel-first-img"
+            src="./img/about-our-hotel/mobile-modern-studio-apartment.jpg"
+            alt="Bedroom in a hotel"
+          />
+        </picture>
       </li>
       <li class="about-hotel-second-item">
         <p class="about-hotel-section-second-p">
@@ -21,24 +47,102 @@
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <img
-          class="about-hotel-second-img"
-          src="./img/about-our-hotel/desktop-apartment.jpg"
-          alt=""
-        />
+        <picture class="about-hotel-second-img">
+          <source
+            media="(max-width: 1023px)"
+            srcset="
+              ./img/about-our-hotel/mobile-apartment.jpg    1x,
+              ./img/about-our-hotel/mobile-apartment-2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <source
+            media="(min-width: 1024px) and (max-width: 1279px)"
+            srcset="
+              ./img/about-our-hotel/tablet-apartment.jpg    1x,
+              ./img/about-our-hotel/tablet-apartment-2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/about-our-hotel/desktop-apartment.jpg    1x,
+              ./img/about-our-hotel/desktop-apartment-2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <img
+            src="./img/about-our-hotel/mobile-apartment"
+            alt="Apartment hotel"
+          />
+        </picture>
       </li>
     </ul>
     <div class="about-hotel-gallery-wrap">
-      <img
-        class="about-hotel-gallery-first-img"
-        src="./img/about-our-hotel/desktop-registration.jpg"
-        alt=""
-      />
-      <img
-        class="about-hotel-gallery-second-img"
-        src="./img/about-our-hotel/desktop-towels.jpg"
-        alt=""
-      />
+      <picture>
+        <source
+          media="(max-width: 1023px)"
+          srcset="
+            ./img/about-our-hotel/mobile-registration.jpg    1x,
+            ./img/about-our-hotel/mobile-registration-2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <source
+          media="(min-width: 1024px) and (max-width: 1279px)"
+          srcset="
+            ./img/about-our-hotel/tablet-registration.jpg    1x,
+            ./img/about-our-hotel/tablet-registration-2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/about-our-hotel/desktop-registration.jpg    1x,
+            ./img/about-our-hotel/desktop-registration-2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <img
+          class="about-hotel-gallery-first-img"
+          src="./img/about-our-hotel/mobile-registration.jpg"
+          alt="Hotel registration"
+        />
+      </picture>
+
+      <picture class="about-hotel-gallery-second-img">
+        <source
+          media="(max-width: 1023px)"
+          srcset="
+            ./img/about-our-hotel/mobile-towels.jpg    1x,
+            ./img/about-our-hotel/mobile-towels-2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <source
+          media="(min-width: 1024px) and (max-width: 1279px)"
+          srcset="
+            ./img/about-our-hotel/tablet-towels.jpg    1x,
+            ./img/about-our-hotel/tablet-towels-2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/about-our-hotel/desktop-towels.jpg    1x,
+            ./img/about-our-hotel/desktop-towels-2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <img
+          class="about-hotel-gallery-second-img"
+          src="./img/about-our-hotel/mobile-towels.jpg"
+          alt="White towels"
+        />
+      </picture>
     </div>
     <div class="switch-btn-wrap">
       <button type="button" class="switch-btn">
